@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="UTF-8">
+<head>
+	<title>for循环乘法表</title>
+	<style>
+		table{width:800px; border-collapse: collapse;}
+		table td{border: 1px solid #ccc; height:30px; text-align: center;}
+	</style>
+</head>
+<body>
+	<script>
+
+			//外层决定了星星的行数
+			// for(var i=1; i<=5; i++){
+			
+			// // 内层决定了每一行星星的个数
+			// 	for(var j=1; j<=i; j++){
+			// 		document.write('*');
+			// 	}
+
+			// 	for(var j=1; j<=5-i; j++){
+			// 		document.write('&');
+			// 	}
+			// 	 	document.write('<br/>');
+			// }
+
+			document.write('<table>');
+			for(var i=1; i<=9; i++){
+				document.write('<tr>');
+				for(var j=1; j<=i; j++){
+					document.write('<td>');
+					document.write(j+'*'+i+'='+j*i);
+					document.write('</td>');
+				}
+				document.write('</tr>');
+			}
+			document.write('</table>');
+
+			// 1.
+			/*for(var i=1;i<=10;i++){
+				alert(i);
+			}*/
+			  // i=11
+
+			
+
+			//3.
+			/*for(var i=0; i<10; i++){
+				if(i==3){
+					i++;
+				}
+				document.write(i);		//i=012456789
+			}*/
+
+
+	</script>
+</body>
+</html>
